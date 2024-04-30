@@ -1,5 +1,16 @@
-export default function ProjectsPage() {
+import { Suspense } from "react";
+import ProjectsList from "./components/project-list";
+import ProjectListLoading from "./components/project-list-loading";
+
+export default async function ProjectsPage() {
+
   return (
-    <>Projects!</>
-  )
+    <div className="p-20">
+      <h1 className="mb-8 text-xl">Projects</h1>
+      <div className="mb-8">Hello, this is the list of my repos!</div>
+      <Suspense fallback={<ProjectListLoading />}>
+        <ProjectsList />
+      </Suspense>
+    </div>
+  );
 }
