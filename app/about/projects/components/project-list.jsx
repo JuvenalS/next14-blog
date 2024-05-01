@@ -6,6 +6,7 @@ export default async function ProjectsList() {
     //{ cache: "no-store"}
   )
   const repos = await response.json()
+  //throw new Error("oops")
 
   await new Promise(resolve => setTimeout(resolve, 5000));
 
