@@ -8,9 +8,7 @@ export const metadata = {
   title: "Projects",
 };
 
-
 export default async function ProjectsPage() {
-
   return (
     <div>
       <H1>Projects</H1>

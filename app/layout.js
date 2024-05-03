@@ -6,18 +6,18 @@ import useServerDarkMode from "@/hooks/use-server-dark-mode";
 
 const roboto = Roboto({
   weight: ["400", "700"],
-  subsets: ["latin"]
-})
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: {
     template: "%s | Piotr Jura",
-    default: "Piotr Jura"
+    default: "Piotr Jura",
   },
 };
 
 export default function RootLayout({ children }) {
-  const theme = useServerDarkMode()
+  const theme = useServerDarkMode();
 
   return (
     <html lang="en" className={theme}>

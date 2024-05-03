@@ -1,10 +1,8 @@
-"use client"
+"use client";
 export default function GlobalError() {
   return (
     <html>
-        <body>
-            Oppppps!
-        </body>
+      <body>Oppppps!</body>
     </html>
-  )
+  );
 }
